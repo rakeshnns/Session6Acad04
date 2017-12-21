@@ -1,0 +1,6 @@
+<div>
+  <input type="text" [(ngModel)] = firstname  #txtname1 (keyup)="0"><span>{{firstname}}</span>
+  <input type="text" [(ngModel)] = lastname  #txtname2 (keyup)="0"><span>{{lastname}}</span>
+  <button (click)="onclick(txtname1.value,txtname2.value)">Submit</button>
+  <app-child-root [result] = "result"></app-child-root>
+</div>
